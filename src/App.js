@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 const App = () => {
     const [backend, setBackend] = useState(null);
     const fetchbackend = async () => {
+        console.log(process.env.REACT_APP_API_URL);
         const test = await fetch(`${process.env.REACT_APP_API_URL}/test`);
         const json = await test.json();
         setBackend(json);
