@@ -1,0 +1,20 @@
+.usersphotos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin-top: 4%;
+    padding: 0 4%;
+}
+.photus1{
+    margin-top: 3%;
+    height: 35vh;
+    width: 35vh;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+.photus1 img{
+    height: 100%;
+    width: 100%;
+}

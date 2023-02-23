@@ -1,0 +1,496 @@
+.editProfile {
+  display: flex;
+  width: 100vw;
+  margin-top: 4%;
+}
+.editProfileLeft {
+  width: 25%;
+  float: left;
+  background-color: #f4fbff;
+}
+.editProfileLeftBox{
+}
+.editpofileleft{
+  height: 160px;
+  width: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 17%;
+}
+.editProfileLeftBox h1{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #848484;
+}
+.editProfileLeftBox p{
+  text-align: justify;
+  font-size: 1rem;
+  font-weight:500;
+  color: rgb(68, 68, 68);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 7px;
+}
+.editProfileLeftBox h3{
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight:100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 7px;
+}
+.editProfileLeftBox h2{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight:100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 22px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.editpofileleft img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.editProfileCenter button {
+  position: relative;
+  background: none;
+  border: solid 1px #121212;
+  transition: linear 250ms;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.editProfileCenter button:is(:hover,:focus) {
+  color: rgb(0, 0, 0);
+}
+
+.editProfileCenter button::after {
+  position: absolute;
+  content: '';
+  inset: 0;
+  z-index: -1;
+  background-color: #121212;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: linear 250ms;
+}
+
+.editProfileCenter button:is(:hover, :focus)::after {
+  transform: scale(1);
+}
+button a{
+  text-decoration: none;
+  color: black;
+}
+.button {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  z-index: 1;
+}
+
+.button::after,
+.button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.button::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  --l: 1px;
+  --t: 1px;
+  --w: 21px;
+  --h: 25px;
+  --b: var(--paper-behind);
+}
+
+.continue-application > div .folder:after {
+  transform: translate(var(--pbx, 0), var(--pby, 0));
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .folder .paper {
+  z-index: 1;
+  --b: var(--paper);
+}
+
+.continue-application > div .folder .paper:before,
+.continue-application > div .folder .paper:after {
+  content: "";
+  width: var(--wp, 14px);
+  height: 2px;
+  border-radius: 1px;
+  transform: scaleY(0.5);
+  left: 3px;
+  top: var(--tp, 3px);
+  position: absolute;
+  background: var(--paper-lines);
+  box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
+}
+
+.continue-application > div .folder .paper:after {
+  --tp: 6px;
+  --wp: 10px;
+}
+
+.continue-application > div .pencil {
+  height: 2px;
+  width: 3px;
+  border-radius: 1px 1px 0 0;
+  top: 8px;
+  left: 105%;
+  position: absolute;
+  z-index: 3;
+  transform-origin: 50% 19px;
+  background: var(--pencil-cap);
+  transform: translateX(var(--pex, 0)) rotate(35deg);
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .pencil:before,
+.continue-application > div .pencil:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: var(
+    --b,
+    linear-gradient(
+      var(--pencil-top) 55%,
+      var(--pencil-middle) 55.1%,
+      var(--pencil-middle) 60%,
+      var(--pencil-bottom) 60.1%
+    )
+  );
+  width: var(--w, 5px);
+  height: var(--h, 20px);
+  border-radius: var(--br, 2px 2px 0 0);
+  top: var(--t, 2px);
+  left: var(--l, -1px);
+}
+
+.continue-application > div .pencil:before {
+  -webkit-clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+  clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+}
+
+.continue-application > div .pencil:after {
+  --b: none;
+  --w: 3px;
+  --h: 6px;
+  --br: 0 2px 1px 0;
+  --t: 3px;
+  --l: 3px;
+  border-top: 1px solid var(--pencil-top);
+  border-right: 1px solid var(--pencil-top);
+}
+
+.continue-application:before,
+.continue-application:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--color);
+  transform-origin: 9px 1px;
+  transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg));
+  top: 26px;
+  right: 16px;
+  transition: transform 0.3s;
+}
+
+.continue-application:after {
+  --r: 45deg;
+}
+
+.continue-application:hover {
+  --cx: 2px;
+  --bg: var(--background-hover);
+  --fx: -40px;
+  --fr: -60deg;
+  --fd: 0.15s;
+  --fds: 0s;
+  --pbx: 3px;
+  --pby: -3px;
+  --pbd: 0.15s;
+  --pex: -24px;
+}
+
+.editProfileLeftBox {
+  margin-top: 4%;
+  padding: 20px;
+  margin-left: 10%;
+  width: 80%;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  background-color: rgb(239, 252, 254);
+}
+.editProfileLeftBoxSingle{
+  width: 100%;
+}
+.editProfileLeftBoxSingle button{
+  margin-top: 8%;
+}
+.editProfileLeftBox1 {
+  display: flex;
+  padding-left: 20px;
+  height: 5vh;
+  color: rgb(67, 6, 78);
+  font-size: 1vmax;
+  text-decoration: none;
+}
+.editProfileLeftBox1 a {
+  text-decoration: none;
+  color: rgb(67, 6, 78);
+}
+
+.editProfileCenter {
+  border-left: 1px solid rgb(232, 232, 232);
+  border-right: 1px solid rgb(232, 232, 232);
+    width: 60%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.editProfileCenterBox1 {
+  margin-top: 2%;
+  display: flex;
+  height: 20vh;
+  box-shadow: 12.8px 12.8px 12.2px rgba(0, 0, 0, 0.02);
+}
+.editProfileCenterBox1Left {
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+}
+.editProfileCenterBox1Left img {
+  width: 100%;
+  height: 100%;
+}
+.editProfileRight {
+  width: 25%;
+  height: 100vh;
+  float: right;
+  background-color: #f4fbff;
+}
+.editProfileRightBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 80%;
+  height: 10vh;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  background-color: whitesmoke;
+}
+.editProfileRightBox button {
+  background-color: rgb(138, 138, 138);
+  border: none;
+  color: #ffffff;
+  padding: 8px 32px;
+  font-size: 1vmax;
+  border-radius: 4px;
+}
+.editProfileRightBox2 {
+  padding: 20px;
+  margin-top: 14%;
+  margin-left: 10%;
+  width: 80%;
+  background-color: whitesmoke;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.editProfileCenterBox1Right {
+  width: 80%;
+  height: 100%;
+  padding-left: 25px;
+}
+.editProfileCenterBox1Right h3 {
+  font-size: 1.4vmax;
+  color: rgb(67, 6, 78);
+  font-family: gilroy;
+  font-weight: 10;
+}
+.editProfileCenterBox1Right p {
+  margin-top: 2%;
+  font-size: 1vmax;
+  color: rgb(34, 90, 168);
+  font-family: cursive;
+}
+.editPRofileCenter {
+  margin-top: 1%;
+  display: flex;
+  color: black;
+}
+.editPRofileCenter input {
+  width: 52vw;
+  height: 5vh;
+  font-size: 1vmax;
+  font-weight: 10;
+  border: 1px solid rgb(233, 230, 230);
+  margin-top: 2%;
+  padding-left: 14px;
+  border-radius: 5px;
+}
+.editPRofileCenter input:focus {
+  outline: none;
+}
+.editPRofileCenter label {
+  margin-top: 2%;
+  border: none;
+  font-size: 1vmax;
+  font-weight: 10;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.editPRofileCenter button {
+  margin-top: 3%;
+}
+
+@media (max-width: 600px) {
+  .editProfile {
+    display: flex;
+    width: 100vw;
+    margin-top: 4%;
+  }
+  .editProfileLeft {
+    margin-top: 12%;
+    width: 25%;
+    float: left;
+    background-color: #f4fbff;
+    display: none;
+  }
+  .editProfileCenter {
+    padding: 15px;
+    margin-top: 10%;
+    display: initial;
+    width: 100%;
+  }
+  .editProfileCenterBox1 {
+    height: 100%;
+    width: 100%;
+  }
+  .editProfileCenterBox1Left {
+    width: 30%;
+    height: 100%;
+  }
+  .editProfileCenterBox1Right {
+    width: 70%;
+    height: 100%;
+  }
+  .editPRofileCenter {
+    display: flex;
+    flex-direction: column;
+  }
+  .editPRofileCenter input {
+    margin-left: -2%;
+    width: 100%;
+    height: 5vh;
+    font-size: 1vmax;
+    font-weight: 10;
+    border: 1px solid rgb(233, 230, 230);
+    margin-top: 2%;
+    padding-left: 14px;
+    border-radius: 5px;
+  }
+ 
+  .editProfileCenter button {
+    position: relative;
+    background: none;
+    border: solid 1px #121212;
+    transition: linear 250ms;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 4.5%;
+    margin-left: -1%;
+  }
+  
+  .editProfileCenter button:is(:hover,:focus) {
+    color: rgb(0, 0, 0);
+  }
+  
+  .editProfileCenter button::after {
+    position: absolute;
+    content: '';
+    inset: 0;
+    z-index: -1;
+    background-color: #121212;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: linear 250ms;
+  }
+  
+  .editProfileCenter button:is(:hover, :focus)::after {
+    transform: scale(1);
+  }
+
+  .editProfileRight {
+    display: none;
+  }
+  .continue-application{
+    width: 100vw;
+  }
+}

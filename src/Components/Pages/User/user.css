@@ -1,0 +1,869 @@
+.hidden{
+  overflow: hidden;
+}
+.uploadpostmain{
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(209, 209, 209, 0.76);
+  position: absolute;
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.uploadpost1{
+  border-radius: 20px;
+  width: 35vw;
+  height: 60vh;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+}
+.uploadpost1top{
+  width: 100%;
+  height: 8vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(227, 227, 227);
+}
+.uploadpost1top h1{
+  font-size: 1.4vmax;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+.uploadpost1center{
+  width: 100%;
+  height: 40vh;
+
+}
+.img1center{
+  margin-top: 3%;
+  margin-left: 4%;
+  display: flex;
+}
+.img1center h1{
+  font-size: 1.2vmax;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  margin-left: 2%;
+}
+.img1center img{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.uploadpost1center textarea{
+  height: 18vh;
+  width: 92%;
+  margin-left: 4%;
+  font-size: 3vh;
+  margin-top: 3%;
+  outline: none;
+  border: none;
+}
+.uploadpost1center input{
+  /* height: 5vh; */
+  width: 92%;
+  margin-left: 4%;
+  font-size: 1vmax;
+  margin-top: 3%;
+  outline: none;
+  padding: 10px;
+  border: 1px solid rgb(224, 224, 224);
+}
+.uploadpost1bottom{
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.uploadpost1bottom button{
+  width:100%;
+  height: 80%;
+  background-color: rgb(225, 228, 234);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1vmax;
+  font-weight: 600;
+  color: rgb(63, 63, 63);
+}
+.profilemain{
+  overflow: hidden;
+}
+.userProfile {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: rgb(246, 253, 255);
+}
+
+.coverphoto {
+  position: relative;
+  margin-top: 4%;
+  width: 100%;
+  height: 58vh;
+  border-radius: 10px;
+  background-color: rebeccapurple;
+}
+.coverphoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coverphotobutton {
+  position: absolute;
+  bottom: 5.9%;
+  right: 2.5%;
+  width: 200px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.coverphotobutton i {
+  font-size: 18px;
+  color: rgb(94, 94, 94);
+  margin-left: 20px;
+}
+.coverphotobutton h6 {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  margin-left: 16px;
+  margin-top: 4%;
+}
+.profilephoto {
+  position: relative;
+  width: 200px;
+  top: -25%;
+  left: 6%;
+  height: 200px;
+}
+.mypostsimage video{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.profilephoto img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profileuploadbutton {
+  position: absolute;
+  bottom: 0;
+  right: 11%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileuploadbutton i {
+  font-size: 18px;
+  color: rgb(94, 94, 94);
+}
+.pofilephotodiv {
+  display: flex;
+  width: 100%;
+}
+.profilephotodivm {
+  display: flex;
+  width: 19%;
+}
+.profilephototext h1 {
+  font-size: 30px;
+  margin-top: 13%;
+  margin-left: 2%;
+  font-weight: 600;
+  color: black;
+  white-space: nowrap;
+}
+.profilephototext h6 {
+  font-size: 18px;
+  margin-top: 1%;
+  margin-left: 2%;
+  color: rgb(94, 94, 94);
+}
+.addmyprofile {
+  margin-top: 4%;
+  display: flex;
+  height: 10vh;
+  width: 53vw;
+  justify-content: flex-end;
+}
+.addmyprofile button {
+  height: 6vh;
+  width: 8vw;
+  margin-left: 2%;
+  font-size: 1.1vmax;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.addmyprofile button:nth-child(1) {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(227, 227, 227);
+}
+
+.userProfile hr {
+  margin-top: -2%;
+}
+.userprofileinfo {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+}
+.userprofileinfoleft {
+  height: 100%;
+  width: 30%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.userprofileinfoleft a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.userprofileinfoleft a:hover {
+  border-bottom: 1px solid blue;
+}
+.userprofileinforight {
+  height: 100%;
+  width: 70%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.dropdown {
+  margin-right: 3%;
+  font-size: 22px;
+}
+.dropdown:hover {
+  color: rgb(253, 154, 5);
+}
+.userBottompost {
+  display: flex;
+  width: 100%;
+  background-color: rgb(239, 239, 239);
+  padding-top: 40px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.userBottompostTop {
+  width: 40%;
+}
+.userBottompostBottom {
+  padding-left: 20px;
+  width: 60%;
+}
+.userBottompostBottom::-webkit-scrollbar {
+  display: none;
+}
+.intro {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(218, 216, 216);
+}
+.photosTop {
+  border: 1px solid rgb(218, 216, 216);
+  border-radius: 10px;
+}
+.intro h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+.intro button {
+  background-color: rgb(230, 230, 230);
+  border: none;
+  border-radius: 6px;
+  color: rgb(0, 0, 0);
+  width: 99%;
+  font-size: 1vmax;
+  margin-top: 2.5%;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+}
+.intro h3 i {
+  font-size: 1.2vmax;
+  color: rgb(0, 0, 0);
+  font-family: 600;
+}
+.photosTop {
+  width: 100%;
+  background-color: white;
+}
+.intro h3 {
+  font-size: 1vmax;
+  color: rgb(94, 94, 94);
+  margin-top: 4%;
+}
+.photosTop1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.photosTop h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+.photosTop a {
+  text-decoration: none;
+  color: rgb(0, 75, 251);
+  font-size: 15px;
+  font-weight: 600;
+}
+.allphotos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  width: 100%;
+  padding-left: 29px;
+  background-color: white;
+}
+.allphotos1 {
+  height: 18vh;
+  width: 7vw;
+  margin-left: 0.9%;
+  padding-bottom: 18px;
+  overflow: hidden;
+}
+
+.allphotos1 img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Friends {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 20px;
+}
+.friends1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 2%;
+}
+.friends1 h1 {
+  padding: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+.friends1 a {
+  text-decoration: none;
+  color: rgb(0, 75, 251);
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 3.6%;
+}
+.allfriends {
+  padding-left: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: -3%;
+  background-color: white;
+}
+.allfriends1 {
+  margin-left: 1%;
+  margin-top: 2%;
+  height: 6vw;
+  width: 7vw;
+  background-color: white;
+}
+.allfriends1 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.whatsyoutmind {
+  height: 20vh;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgb(218, 216, 216);
+  cursor: pointer;
+  box-shadow: 25px 25px 50px #797979, -25px -25px 50px #ffffff;
+}
+.whatsyoutmindtop {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+.whatsyoutmindtopPhoto {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 4%;
+}
+.whatsyoutmindtopPhoto img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.whatsyoutmindbottom {
+  height: 50%;
+  width: 100%;
+}
+.whatsyoutmindtop input {
+  margin-left: 2%;
+  border: 1px solid rgb(231, 231, 231);
+  background-color: rgb(241, 241, 241);
+  outline: none;
+  width: 85%;
+  padding: 8px;
+  border-radius: 22px;
+  font-size: 1vmax;
+  padding-left: 10px;
+  padding-left: 2.2%;
+  font-family: sans-serif;
+  color: black;
+  cursor: pointer;
+}
+.whatsyoutmindtop {
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+.whatsyoutmindbottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+}
+.whatsyoutmindbottom h1 {
+  font-size: 1.2vmax;
+  font-weight: 600;
+  color: rgb(134, 134, 134);
+}
+.whatsyoutmindbottom h1 i {
+  font-size: 1.2vmax;
+  font-weight: 600;
+}
+.whatsyoutmindbottom h1 i:nth-child(1) {
+  color: rgb(80, 40, 77);
+}
+.myposts {
+  width: 100%;
+  background-color: white;
+  margin-top: 2%;
+  border-radius: 10px;
+  border: 1px solid rgb(218, 216, 216);
+  box-shadow: 25px 25px 50px #797979, -25px -25px 50px #ffffff;
+}
+.mypostsTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+}
+.mypostsTop1 {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 4%;
+  background-color: black;
+  overflow: hidden;
+  margin-top: 1%;
+}
+.mypostsTop1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.mypostsTop2 {
+  height: 100%;
+  width: 70%;
+}
+.mypostsTop2 h1 {
+  margin-top: 2.4%;
+  font-size: 1.2vmax;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  margin-left: 4%;
+}
+.mypostsTop2 h5 {
+  font-size: 0.8vmax;
+  color: rgb(145, 144, 144);
+  margin-left: 4%;
+  margin-top: -1%;
+}
+.mypostsTop3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 20%;
+  margin-right: 5%;
+}
+.mypostsCenter {
+  width: 100%;
+  margin-top: 1%;
+}
+.mypostsCaption {
+  width: 100%;
+  margin-top: 1%;
+  padding: 0px 4%;
+}
+.mypostsCaption h3 {
+  font-size: 1vmax;
+  display: flex;
+  text-align: justify;
+  color: rgb(60, 60, 60);
+  font-weight: 600;
+  margin-top: 1%;
+}
+.mypostsimage {
+  width: 100%;
+  margin-top: 3%;
+}
+.mypostsimage img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.mypostsimage  video{
+  height: 90vh;
+  width: 100%;
+}
+.mypostsBottom {
+  width: 100%;
+  margin-top: 1%;
+}
+.mypostsBottom1 {
+  padding: 10px;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0px 40px;
+  margin-top: 2%;
+}
+.mypostsBottom1 h1 {
+  font-size: 1.2vmax;
+  font-weight: 100;
+  color: rgb(120, 120, 120);
+  margin-left: 1%;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.mypostsBottom1 i {
+  font-size: 1.2vmax;
+  font-weight: 600;
+  color: rgb(87, 86, 86);
+}
+@media screen and (max-width: 768px) {
+  .userProfile {
+    margin-top: 23%;
+    padding: 0px;
+  }
+  .coverphoto {
+    margin-top: -7%;
+    position: relative;
+    height: 25vh;
+    border-radius: 0%;
+    overflow: visible;
+  }
+  .profilephoto {
+    width: 110px;
+    right: 4%;
+    height: 110px;
+  }
+  .profilephoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .profileuploadbutton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(77, 77, 77);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profileuploadbutton i {
+    font-size: 15px;
+    color: rgb(94, 94, 94);
+  }
+  .profilephotodivm {
+    display: flex;
+    width: 39%;
+  }
+  .profilephototext h1 {
+    font-size: 22px;
+    margin-top: 10%;
+    margin-left: 16%;
+  }
+  .profilephototext h6 {
+    font-size: 15px;
+    margin-top: 0%;
+    margin-left: 16%;
+  }
+  .addmystory {
+    padding: 0;
+    margin-top: 15%;
+    margin-right: 10%;
+    height: 4vh;
+    width: 4vh;
+    background-color: rgb(52, 154, 250);
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .addmystory i {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+  }
+  .addmystory h6 {
+    display: none;
+  }
+  .addmyprofile {
+    width: 53vw;
+    margin-top: 4%;
+    margin-right: 2%;
+  }
+  .addmyprofile button {
+    height: 4vh;
+    width: 5vh;
+    background-color: rgb(5, 115, 218);
+    cursor: pointer;
+  }
+  .userProfile hr {
+    margin-top: -30.2%;
+  }
+  .userprofileinfo {
+    height: 10vh;
+    width: 100%;
+    margin-top: 23%;
+  }
+  .userprofileinfoleft {
+    width: 70%;
+    padding: 0px;
+  }
+  .userprofileinfoleft a {
+    color: rgb(50, 50, 52);
+  }
+  .userprofileinfoleft a:nth-child(6) {
+    display: none;
+  }
+  .userprofileinforight {
+    width: 40%;
+    padding-right: 8px;
+  }
+  .userBottompost {
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .userBottompostTop {
+    width: 100%;
+  }
+  .userBottompostBottom {
+    margin-top: 4%;
+    width: 100%;
+    padding-left: 0%;
+    overflow: auto;
+  }
+  .intro {
+    width: 100%;
+    background-color: white;
+  }
+  .intro h3 {
+    font-size: 2vmax;
+    color: rgb(94, 94, 94);
+    margin-top: 4%;
+  }
+  .intro h3 i {
+    font-size: 2.2vmax;
+    color: rgb(94, 94, 94);
+    margin-top: 4%;
+  }
+  .intro button {
+    padding: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(230, 249, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 2vmax;
+    margin-top: 4%;
+  }
+  .photos {
+    width: 100%;
+    background-color: white;
+  }
+  .photosTop1 h1 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-top: 4%;
+  }
+  .photosTop1 a {
+    font-size: 2vmax;
+    color: rgb(12, 69, 190);
+  }
+  .allphotos1 {
+    margin-left: 2%;
+    height: 12vh;
+    width: 10vh;
+  }
+  .allphotos {
+    margin-top: -5%;
+    padding-bottom: 10px;
+    padding-left: 13px;
+  }
+  .allfriends {
+    padding-left: 0px;
+    margin-top: -6%;
+  }
+  .allfriends1 {
+    margin-left: 3.4%;
+    height: 10vh;
+    width: 10vh;
+  }
+  .whatsyoutmind {
+    padding: 0px;
+    width: 100%;
+    background-color: white;
+    margin-top: 2%;
+  }
+  .whatsyoutmindtop input {
+    width: 81%;
+    height: 5vh;
+    padding: 0px 16px;
+    font-size: 1.7vmax;
+    border: none;
+  }
+  .whatsyoutmindbottom {
+    padding-left: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .whatsyoutmindbottom h1 {
+    font-size: 1.7vmax;
+    white-space: nowrap;
+    margin-left: 22%;
+  }
+  .mypostsTop2 h1 {
+    font-size: 1.7vmax;
+    margin-top: 7%;
+    margin-left: 9%;
+  }
+  .mypostsTop2 h5 {
+    font-size: 1.2vmax;
+    margin-top: -1%;
+    margin-left: 9%;
+  }
+  .mypostsCaption h3 {
+    font-size: 1.5vmax;
+  }
+  .mypostsBottom1 h1 {
+    margin-top: 1%;
+    font-size: 2vmax;
+  }
+  .uploadpostmain{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .uploadpost1{
+    width: 94%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0%;
+    height: auto;
+  }
+  .uploadpost1top{
+    width: 100%;
+    height: 10%;
+    background-color: #eaeaea;
+  }
+  .uploadpost1top h1{
+    font-size: 2vmax;
+    margin-top: 2%;
+    margin-left: 2%;
+  }
+  .uploadpost1center input{
+    width: 100%;
+    height: 5vh;
+    padding: 0px 16px;
+    font-size: 1.7vmax;
+    border: none;
+  }
+  .uploadpost1center {
+    width: 100%;
+    height: 30vh;
+}
+  .uploadpost1bottom{
+    width: 100%;
+    font-size: 1.6vmax;
+  }
+  .uploadpost1bottom button{
+    font-size: 1.9vmax;
+  }
+}
